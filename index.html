@@ -3,8 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Simple App</title>
+		<!--
+			
+		Here is most of Firefox OS power: UI Bulding blocks (mainly develeped by http://basiclines.com/portfolio/) )
+		For a full description and examples go here: http://buildingfirefoxos.com/index.html
+
+		-->
 		<link rel="stylesheet" type="text/css" href="style/headers.css">
 		<link rel="stylesheet" type="text/css" href="style_unstable/lists.css">
+		<!--
+		A little bit of extra styling
+		-->
 		<style type="text/css">
 			html, body {
 				margin: 0;
@@ -25,6 +34,9 @@
 				overflow-x: -moz-hidden-unscrollable;.a:
 				visibility: hidden;
 			}
+			/*
+			 * Stacking the sections which are not the main window (edit & setting) to the left
+			 */
 			#edit {
 				left: 100%;
 			}
@@ -42,40 +54,39 @@
 		<section id='main'  role="region">
 			<header>
 				<menu type="toolbar">
+					<!--
+						This is actually the coolest part: jump to other windows just with an #href !!!!
+					-->
 					<a href="#edit"><span class="icon icon-edit">edit</span></a>
-					<a href="#setting"><span class="icon icon-menu">edit</span></a>
+					<a href="#setting"><span class="icon icon-menu">menu</span></a>
 				</menu>
 				<h1>Main Screen</h1>
 			</header>
+			<!--
+			A little bit of text to demonstrate vertical scroll
+			-->
+			<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
 			<p>
-				El <a href="http://www.google.es/url?sa=t&rct=j&q=gobierno%20vasco%20tag%20el%20pais%E2%80%8E&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=http%3A%2F%2Felpais.com%2Ftag%2Fgobierno_vasco%2Fa%2F&ei=z1jYUPG0EYaW0QWFtYG4CA&usg=AFQjCNE8r44owpxtHPav8sZ_RECmNqfbvA&bvm=bv.1355534169,d.d2k">Gobierno vasco</a> ha aprobado esta mañana el proyecto de ley de Medidas sobre las Pagas Extraordinarias de 2013. Con un único artículo, el texto, que busca eliminar los obstáculos para que el próximo año se adelanten las extras de verano y navidad a los meses de enero en los primeros días— y julio, respectivamente, para toda la plantilla del Ejecutivo, llegará al Parlamento el miércoles. Ese día se reunirán la Mesa de la Cámara y la Junta de Portavoces con la idea de convocar un pleno —previsiblemente el próximo día 28 o el 31 como muy tarde— para la aprobación definitiva del texto legal.
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			</p>
+			<h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
 			<p>
-				El proyecto “no toca los presupuestos de 2012, respeta por completo <a href="http://economia.elpais.com/economia/2012/07/11/actualidad/1341997646_952944.html">las decisiones del Gobierno central</a> y no incumple <a href="http://ccaa.elpais.com/ccaa/2012/12/11/paisvasco/1355226315_901039.htmlhttp://ccaa.elpais.com/ccaa/2012/12/11/paisvasco/1355226315_901039.html">las líneas marcadas por el Constitucional”,</a> en la decisión por la que paralizó la intención del anterior Ejecutivo socialista de abonar la paga de esta Navidad a sus funcionarios, ha resumido el portavoz del Ejecutivo, <a href="http://www.google.es/url?sa=t&rct=j&q=erkoreka%20tag%20el%20pais%E2%80%8E&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=http%3A%2F%2Felpais.com%2Ftag%2Fjosu_erkoreka%2Fa%2F&ei=UlnYUODAM8Wx0AW94YHICw&usg=AFQjCNGXgFFpa6Jbh10jQ5LMom978OTexA&bvm=bv.1355534169,d.d2k">Josu Erkoreka.</a> “Respeta escrupulosamente los marcos competenciales”, ha insistido.
+				"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 			</p>
+			<h3>1914 translation by H. Rackham</h3>
 			<p>
-				El portavoz ha explicado tras la segunda reunión del nuevo Consejo de Gobierno que esperan que la ley sea aprobada “en los próximos días” y ha aclarado que el documento, cuya redacción concreta no ha sido facilitada por el momento, no plantea la voluntariedad de la medida, sino que se aplicará de manera generalizada a los 70.000 empleados de la Administración vasca (funcionarios y contratados  laborales). Erkoreka ha precisado que la voluntariedad podría acarrear problemas a la hora de las futuras declaraciones del IRPF de los funcionarios, por lo que el Ejecutivo ha optado por implantar la medida con carácter generalizado.
+				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
 			</p>
+			<h3>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
 			<p>
-				Los 208 millones que se quedan en la Administración con la supresión de la extra se destinarán, tal y como ha decidido esta mañana el Ejecutivo, a “reforzar los planes de empleo y a consolidar los servicios públicos esenciales”, como la educación, la sanidad o los servicios sociales.
+				"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 			</p>
+			<h3>1914 translation by H. Rackham</h3>
 			<p>
-				El Real Decreto que el pasado mes de julio suprimió la extra plantea destinar el dinero correspondiente a esta a los fondos de pensión de los funcionarios, pero, según ha explicado el portavoz, ello ocurrirá “en función del camino que tome la economía”. ¿Qué pasará con la extra que tenía que ser abonada en diciembre del próximo año? “Lo hablaremos en diciembre, queda un año”, ha respondido Erkoreka.
-			</p>
-			<p>
-				Respecto al <a href="http://ccaa.elpais.com/ccaa/2012/12/21/paisvasco/1356108017_600131.html">cobro de la extra por exaltos cargos del anterior Gobierno,</a> Erkoreka ha explicado que no tiene constancia de que alguno de ellos <a href="http://ccaa.elpais.com/ccaa/2012/12/23/paisvasco/1356293566_959817.html">haya gestionado ya los trámites para su devolución,</a> pero ha mostrado su intención de no mirar atrás.
-			</p>
-			<p>
-				El portavoz ha hecho un llamamiento a la “responsabilidad” de los partidos de cara a la negociación de los próximos presupuestos y ha defendido que “todas las instituciones deberían contar" con cuentas nuevas. Por ello, ha pedido que “todos hagan cuanto esté en su mano” para que ello ocurra.
-			</p>
-			<p>
-				El Gobierno presentará a finales de enero en la Cámara las líneas generales de unas cuentas “concebidas para el acuerdo y el consenso”. El Gobierno “no contempla otro escenario que tener cuentas” en el próximo ejercicio, para lo que necesitará al menos un socio en el Parlamento.
-			</p>
-			<p>
-				El Ejecutivo ha aprobado además durante su renión el cese de 37 altos cargos y el nombramiento de 20 nuevos, sobre todo viceconsejeros y directores. Erkoreka ha subrayado que, frente a los 45 consejeros y viceconsejeros que sumaba anterior Gabinete, el del PNV tendrá 35. Por el momento, han sido nombrados 29 de ellos.
+				"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
 			</p>
 		</section>
-		<section id='edit' role="region" class="skin-dark">
+		<section id='edit' role="region" >
 			<header>
 				<a href="#main"><span class="icon icon-back">back</span></a>
 				<h1>Edit Me</h1>
@@ -83,7 +94,6 @@
 			<header>
 				<h2>To be editted</h2>
 			</header>
-			Edit Screen
 		</section>
 		<section id='setting' role="region" class="skin-dark">
 			<header>
@@ -93,7 +103,6 @@
 			<header>
 				<h2>Settings go here</h2>
 			</header>
-			
 		</section>
 	</body>
 </html>
